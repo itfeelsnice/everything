@@ -1,0 +1,165 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color:cadetblue;
+}
+
+#divall{
+    position: absolute;
+    inset: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-image:
+    radial-gradient(3px 3px at 20% 70%, cadetblue, transparent),
+    radial-gradient(10px 10px at 90% 10%, khaki, transparent),
+    radial-gradient(5px 5px at 40% 90%, cadetblue, transparent),
+    radial-gradient(5px 5px at 60% 30%, khaki, transparent);
+    background-size: 200px 200px;
+    pointer-events: none;
+    z-index: -100;
+    animation: position1 6s linear infinite;
+    background-color: white;
+}
+
+#top1{
+    box-shadow: 5px 5px 30px gray, -5px -5px 30px gray;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    overflow: hidden;
+    z-index: 10;
+    pointer-events: none;
+    left: -50px;
+}
+
+@keyframes position1{
+    0%{background-position: 0 0;}
+    100%{background-position: 0 200px;}
+}
+
+.div1{
+    position: relative;
+    inset: 0;
+    width: 18vmax;
+    height: 15vmax;
+    border-radius: 50px;
+    pad: 20px;
+    background-color: white;
+}
+
+#div2{
+    top: 2vmin;
+    left: 4vmax;
+    box-shadow: 5px 5px 10px cadetblue, -5px -5px 10px cadetblue;
+    transition: box-shadow 0.2s linear;
+    animation: opacity1 1.5s linear 1;
+}
+
+#div2:hover{
+    box-shadow: 5px 5px 30px cadetblue, -5px -5px 30px cadetblue;
+}
+
+#div3{
+    bottom: 2vmin;
+    left: 30vmax;
+    box-shadow: 5px 5px 10px khaki, -5px -5px 10px khaki;
+    transition: box-shadow 0.2s linear;
+    opacity: 0;
+}
+
+#div3:hover{
+    box-shadow: 5px 5px 30px khaki, -5px -5px 30px khaki;
+}
+
+#div4{
+    top: -25vmax;
+    left: 75vmax;
+    box-shadow: 5px 5px 10px khaki, -5px -5px 10px khaki;
+    transition: box-shadow 0.2s linear;
+    opacity: 0;
+}
+
+#div4:hover{
+    box-shadow: 5px 5px 30px khaki, -5px -5px 30px khaki;
+}
+
+#div5{
+    top: -35vmin;
+    left: 55vmax;
+    box-shadow: 5px 5px 10px cadetblue, -5px -5px 10px cadetblue;
+    transition: box-shadow 0.2s linear;
+    opacity: 0;
+}
+
+#div5:hover{
+    box-shadow: 5px 5px 30px cadetblue, -5px -5px 30px cadetblue;
+}
+
+.opac1{
+    animation: opacity1 1s linear 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes opacity1{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.a1{
+    word-wrap: break-word;
+    padding: 20px;
+}
+
+#a2{
+    background-clip: text;
+    background-image: linear-gradient(to left, cadetblue, black, cornflowerblue);
+    color: transparent;
+}
+
+#a3{
+    background-clip: text;
+    background-image: linear-gradient(to left, khaki, black, darkkhaki);
+    color: transparent;
+}
+
+#a4{
+    background-clip: text;
+    background-image: linear-gradient(to left, khaki, black, darkkhaki);
+    color: transparent;
+}
+
+#a5{
+    background-clip: text;
+    background-image: linear-gradient(to left, cadetblue, black, cornflowerblue);
+    color: transparent;
+}
+
+#divall2{
+    height: 100vh;
+    background-color: white;
+}
+
+#a6{
+    position: absolute;
+    top: 52vmax;
+    font-size: 4vmax;
+    left: 35%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to left, khaki, black, cadetblue);
+    background-size: 300px 300px;
+    animation: position2 5s linear infinite;
+}
+
+@keyframes position2{
+    0%{background-position: 0 0;}
+    100%{background-position: 300px 0;}
+}
+
