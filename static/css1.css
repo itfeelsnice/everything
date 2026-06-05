@@ -143,7 +143,7 @@ body{
     background-color: white;
 }
 
-#a6{
+.a6{
     position: absolute;
     top: 52vmax;
     font-size: 4vmax;
@@ -155,7 +155,17 @@ body{
     color: transparent;
     background-image: linear-gradient(to left, khaki, black, cadetblue);
     background-size: 300px 300px;
-    animation: position2 5s linear infinite;
+    /* animation: position2 5s linear infinite; */
+    opacity: 0;
+}
+
+.opac2{
+    animation: opacity2 2s linear 1 forwards, position2 5s linear infinite;
+}
+
+@keyframes opacity2{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 @keyframes position2{
@@ -163,3 +173,138 @@ body{
     100%{background-position: 300px 0;}
 }
 
+.grab1{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    cursor: grab;
+}
+
+#grab2{
+    left: 100px;
+    box-shadow: 5px 5px 30px cadetblue, -5px -5px 30px cadetblue;
+    top: 70vmax;
+}
+
+.inp1{
+    position: relative;
+    height: 40px;
+    font-size: 20px;
+}
+
+#inp2{
+    border-color: cadetblue;
+    outline: none;
+    color: black;
+    top: -4vmax;
+}
+
+#inp2:focus{
+    border-color: cadetblue;
+}
+#inp2::placeholder{
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to left, cadetblue, black);
+}
+
+#grab3{
+    left: 1300px;
+    box-shadow: 5px 5px 30px khaki, -5px -5px 30px khaki;
+    top: 80vmax;
+}
+
+#inp3{
+    border-color: khaki;
+    outline: none;
+    color: black;
+    top: -4vmax;
+}
+
+#inp3:focus{
+    border-color: khaki;
+}
+#inp3::placeholder{
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to left, khaki, black);
+}
+
+#grab4{
+    left: 800px;
+    top: 100vmax;
+    box-shadow: 5px 5px 30px cadetblue, -5px -5px 30px cadetblue;
+}
+
+#inp4{
+    color: black;
+    outline: none;
+    border-color: cadetblue;
+    top: -4vmax;
+}
+
+#inp4::placeholder{
+    color: transparent;
+    background-image: linear-gradient(to left, cadetblue, black);
+    background-clip: text;
+}
+
+#inp4:focus{
+    color: black;
+    border-color: cadetblue;
+}
+
+.click1{
+    cursor: grabbing;
+}
+
+.a7{
+    position: absolute;
+    bottom: -13vmax;
+    left: 32vmax;
+    background-image: linear-gradient(to left, khaki, cadetblue, black);
+    background-size: 200px 200px;
+    background-clip: text;
+    color: transparent;
+    /* animation: move1 6s linear infinite; */
+    opacity: 0;
+}
+
+@keyframes move1 {
+    0%{background-position: 0 0;}
+    100%{background-position: 200px 0;}
+}
+
+.opac3{
+    animation: move1 6s linear infinite, opacity3 2s linear 1 forwards;
+}
+
+@keyframes opacity3{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+#text1{
+    position: absolute;
+    word-wrap: break-word;
+    width: 250px;
+    top: 50px;
+}
+
+#text2{
+    position: absolute;
+    word-wrap: break-word;
+    width: 250px;
+    top: 50px;
+}
+
+#text3{
+    position: absolute;
+    word-wrap: break-word;
+    width: 250px;
+    top: 50px;
+}
