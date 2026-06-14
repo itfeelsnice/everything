@@ -308,3 +308,31 @@ body{
     width: 250px;
     top: 50px;
 }
+
+#vid1{
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    top: 209%;
+    left: 68%;
+    opacity: 0;
+}
+
+#btn1{
+    border-radius: 30px;
+    font-size: 1vmax;
+    color: cadetblue;
+    border-color: khaki;
+    position: absolute;
+    top: 220%;
+    left: 90%;
+}
+
+.btnopac{
+    animation: opac4 2s linear 1 forwards;
+}
+
+@keyframes opac4{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}

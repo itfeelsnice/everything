@@ -169,14 +169,6 @@ document.addEventListener("mouseup", (e) =>{
     grab4.classList.remove("click1")
 });
 
-// let text1 = document.querySelector("#text1");
-// let text2 = document.querySelector("#text2");
-// let text3 = document.querySelector("#text3");
-
-// let inp2 = document.querySelector("#inp2");
-// let inp3 = document.querySelector("#inp3");
-// let inp4 = document.querySelector("#inp4");
-
 inp2.addEventListener("input", () =>{
     value1 = inp2.value;
     text1.textContent = value1;
@@ -193,4 +185,12 @@ inp4.addEventListener("input", () =>{
     value3 = inp4.value;
     text3.textContent = value3;
     localStorage.setItem("value3", value3);
+});
+
+let btn1 = document.querySelector("#btn1");
+let vid1 = document.querySelector("#vid1");
+
+btn1.addEventListener("click", () =>{
+    btn1.remove();
+    vid1.classList.add("btnopac");
 });
